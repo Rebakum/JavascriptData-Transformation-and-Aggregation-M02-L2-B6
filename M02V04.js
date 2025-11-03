@@ -18,10 +18,21 @@ const hasEvenNumber = numbers.some((num) => num % 2 == 0);
 // console.log(hasAccess);
 // output: false
 
-const currentUserRole = ["user", "admin", "editor"];
-const featuredUserRole = ["admin", "manager"];
-const hasAccess = currentUserRole.some((role) =>
-  featuredUserRole.includes(role)
-);
-console.log(hasAccess);
-// true
+// Example 2: Check if a user has at least one of the featured roles
+
+// const currentUserRole = ["user", "admin", "editor"];
+// const featuredUserRole = ["admin", "manager"];
+// const hasAccess = currentUserRole.some((role) =>
+//   featuredUserRole.includes(role)
+// );
+
+// console.log(hasAccess);
+// output: // true
+
+// Create an array of specific length and fill it with a value
+
+// const arr = Array.from({ length: 5 }).fill(0);
+// console.log(arr); // [ 0, 0, 0, 0, 0 ]
+
+const arr = Array.from({ length: 5 }).fill("ABC");
+console.log(arr); // [ "ABC", "ABC", "ABC", "ABC", "ABC" ]
